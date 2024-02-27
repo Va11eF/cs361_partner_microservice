@@ -24,3 +24,6 @@ Afterwards, you will need to send the joke over, if you are sending it over as a
 However, if the string is in a variable, then you can simply add .encode('utf-8') to the variable for it to be transferred through the socket. E.G. joke.encode('utf-8')
 Once the joke has been sent, the user will recieve a response from the server asking for a username, send your username to the server so that it can be entered into the db alongside the username.
 Afterwards you recieve the final response for this sequence indicating that the joke has been saved.
+
+
+<img width="800" alt="image" src="https://github.com/Va11eF/cs361_partner_microservice/assets/156148160/f974e401-2b43-46bf-9ba4-5ec575de7864">
