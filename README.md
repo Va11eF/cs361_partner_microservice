@@ -1,4 +1,10 @@
 # cs361_partner_microservice
+Before starting the microservice, run the createDatabase.py script first to create the database and table
+Afterwards, the microservice is ready to be run
+
+UserJokesDB.py has defined functions that the microservice will use
+Client.py was used to test and demonstrate the microservice, it can also be used as reference if needed
+
 To request data from the microservice you will first need to import zmq.
 Once imported, you can setup a connecet to the server with the following lines:
     context = zmq.Context()
@@ -25,5 +31,6 @@ However, if the string is in a variable, then you can simply add .encode('utf-8'
 Once the joke has been sent, the user will recieve a response from the server asking for a username, send your username to the server so that it can be entered into the db alongside the username.
 Afterwards you recieve the final response for this sequence indicating that the joke has been saved.
 
+If an unrecognized command is sent, the user will recieve b"Command not recognized" in response from the microservice
 
 <img width="800" alt="image" src="https://github.com/Va11eF/cs361_partner_microservice/assets/156148160/f974e401-2b43-46bf-9ba4-5ec575de7864">
